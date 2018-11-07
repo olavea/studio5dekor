@@ -1,0 +1,54 @@
+{
+  "name": "gatsby-stripe-store-starer",
+  "description": "Ecommerce started with data from Stripe",
+  "version": "0.0.1",
+  "author": "Benedicte Raae (raae.codes)",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bulma": "^0.7.1",
+    "classnames": "^2.2.6",
+    "gatsby": "^2.0.0",
+    "gatsby-plugin-manifest": "^2.0.2",
+    "gatsby-plugin-offline": "^2.0.5",
+    "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-sass": "^2.0.1",
+    "gatsby-plugin-stripe-checkout": "^1.0.7",
+    "gatsby-source-stripe": "github:raae/gatsby-source-stripe",
+    "http-proxy-middleware": "^0.19.0",
+    "lodash": "^4.17.11",
+    "netlify-lambda": "^0.4.0",
+    "node-sass": "^4.9.3",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "react-helmet": "^5.2.0",
+    "stripe": "^6.12.1"
+  },
+  "keywords": [
+    "gatsby",
+    "stripe",
+    "ecommerce"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "run-p build:**",
+    "build:gatsby": "gatsby build",
+    "build:lambda": "netlify-lambda build src/lambda",
+    "develop": "run-p develop:**",
+    "develop:gatsby": "rm -r -f .cache && gatsby develop",
+    "develop:lambda": "netlify-lambda serve src/lambda",
+    "format": "prettier --write '**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.3",
+    "prettier": "^1.14.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raae/gatsby-stripe-store-starter"
+  },
+  "bugs": {
+    "url": "https://github.com/raae/gatsby-stripe-store-starter/issues"
+  },
+  "homepage": "https://github.com/raae/gatsby-stripe-store-starter#readme"
+}
