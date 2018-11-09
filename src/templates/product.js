@@ -38,11 +38,11 @@ export default ({
           }
         </StripeCheckout>
       </Main>
-      <Footer>
-        {product.metadata.footer.split("\n\n").map((paragraph, key) => (
-          <p key={key}>{paragraph}</p>
-        ))}
-      </Footer>
+//      <Footer>
+//        {product.metadata.footer.split("\n\n").map((paragraph, key) => (
+//          <p key={key}>{paragraph}</p>
+//        ))}
+//      </Footer>
     </Layout>
   );
 };
