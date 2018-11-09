@@ -39,9 +39,17 @@ export default ({
         </StripeCheckout>
       </Main>
       <Footer>
-        {product.metadata.footer.split("\n\n").map((paragraph, key) => (
-          <p key={key}>{paragraph}</p>
-        ))}
+        if (product.metadata.footer !== undefined) { 
+          {product.metadata.footer.split("\n\n").map((paragraph, key) => (
+            <p key={key}>{paragraph}</p>
+          ))}
+        } else {
+          no split for you!
+        };
+          
+          
+          
+          
       </Footer>
     </Layout>
   );
