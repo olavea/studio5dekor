@@ -7,8 +7,8 @@ const Hero = ({ title, subtitle, size = "medium", children }) => (
     <div className="hero-body">
       <div className="container has-text-centered">
         <img
-          src="https://studio5dekor.no/wp-content/uploads/2013/08/Ny-logo-45-mm.png"
-          alt="studio5dekor, studio 5 dekor, Susanne Schwarz Hoset"
+          src="http://stories.olavea.com/static/olaveap%C3%A5FbogTwitterSmalere.7b0a4de6.png"
+          alt="Ola Vea Shop, Benedicte Raae"
         />
 
         {subtitle && <p className="subtitle">{subtitle}</p>}
