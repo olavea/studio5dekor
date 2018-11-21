@@ -24,7 +24,7 @@ exports.createPages = async ({ actions: { createPage } }) => {
 
   if (allProducts.length > 0) {
     // Create a single product page as the frontpage
-    const product = allProducts[0];
+    const product = allProducts.slice(0, 2)
     const productSkus = filterProductSkus(product, allSkus);
 
     createPage({
